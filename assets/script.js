@@ -48,49 +48,58 @@ credit.textContent = `Created by ${yourName}`
 // Event listener for clicks on the "+"&"-" button for Gingerbread cookies
 gbPlusBtn.addEventListener('click', function() {
     gb++
+    total++
     updateGbQuantity (`${gb}`)
-    updateTotalQuantity(`${gb}`)
+    updateTotalQuantity(`${total}`)
     
 })
 
 gbMinusBtn.addEventListener('click', function(e){
     if (gb > 0) {
         gb--
+        total--
     }
         updateGbQuantity (`${gb}`)
-        updateTotalQuantity(`${gb}`)
-       
-
+        updateTotalQuantity(`${total}`)
+   
 })
 
 // Event listener for clicks on the "+"&"-" button for Chocolate Chip cookies
 ccPlusBtn.addEventListener('click', function() {
     cc++
+    total++
     updateCcQuantity (`${cc}`)
+    updateTotalQuantity(`${total}`)
 })
 
 ccMinusBtn.addEventListener('click', function(e){
     if (cc > 0) {
         cc--
+        total--
     }
         updateCcQuantity (`${cc}`)
+        updateTotalQuantity(`${total}`)
 })
 
 // Event listener for clicks on the "+"&"-" button for Sugar cookies
 sugarPlusBtn.addEventListener('click', function() {
     sugar++
+    total++
  updateSugarQuantity(`${sugar}`)
+ updateTotalQuantity(`${total}`)
 })
 
 sugarMinusBtn.addEventListener('click', function(e){
     if (sugar>0){
         sugar--
+        total--
     }
     updateSugarQuantity(`${sugar}`)
+    updateTotalQuantity(`${total}`)
 })
 
 //function getTotal() {
-    //var all = document.querySelectorAll('.summary')
+    //var all = document.querySelectorAll('.button-container')
    // var total = 0
    // for(var i = 0;i < all.length; i++){
        // if (parseInt(all[i].value)){
